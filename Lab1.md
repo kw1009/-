@@ -8,4 +8,5 @@
 ![螢幕擷取畫面 2021-08-29 103439](https://user-images.githubusercontent.com/89327102/131236340-6aa4a6ea-8a24-49a1-8618-5e65afd68bab.jpg)
 ## 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, 讓LED ON, OFF的順序為R >> G >> B >> G >> R .... 無限循環
 
-![螢幕擷取畫面 2021-08-29 103911](https://user-images.githubusercontent.com/89327102/131236407-2abf412a-196d-4607-9d5f-5d149624504a.jpg)
+![螢幕擷取畫面 2021-09-05 091139](https://user-images.githubusercontent.com/89327102/132111729-2ef75fd7-43e5-4710-a5b1-d4caa7d0e6ce.jpg)
+
