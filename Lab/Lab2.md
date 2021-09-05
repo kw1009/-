@@ -25,7 +25,7 @@ void setup()
 ````
 ## 2-2 RGB LED燈全彩模組, 分別讓LED輪流表現正紅、正綠、正藍，三個顏色，時間間隔1秒鐘。並且觀查LED顏色和波形或是電壓有什麼關連性? 可將個人說明在更新GitHub時一起加入
 
-![螢幕擷取畫面 2021-09-05 104148](https://user-images.githubusercontent.com/89327102/132113109-6f1efa38-cf9a-4dcc-afc9-a8464a8507ac.jpg)
+![螢幕擷取畫面 2021-09-05 221227](https://user-images.githubusercontent.com/89327102/132130159-f9dc4170-d263-4ca5-90d7-becb6a0b3daf.jpg)
 
 ````
 const int R = 9 ;
