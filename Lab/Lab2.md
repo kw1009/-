@@ -48,7 +48,7 @@ void loop()
     delay(1000);
   analogWrite(R,0);
   analogWrite(G,255);
-  analogWrite(G,255);
+  analogWrite(B,0);
     
     delay(1000); 
   analogWrite(R,0);
