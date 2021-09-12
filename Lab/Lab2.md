@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/89327102/132112778-84441431-1758-4613-841f-012d42b53cea.png)
 
-````
+````c
 int brightness = 0;
 
 void setup()
@@ -27,7 +27,7 @@ void setup()
 
 ![螢幕擷取畫面 2021-09-05 223042](https://user-images.githubusercontent.com/89327102/132130600-05502901-eeea-49e2-808c-841dabce77f7.jpg)
 
-````
+````c
 const int R = 9 ;
 const int G = 10 ;
 const int B = 11 ;
@@ -63,7 +63,7 @@ void loop()
 
 ![螢幕擷取畫面 2021-09-12 095531](https://user-images.githubusercontent.com/89327102/132968047-973ca7d8-449f-4aac-ab43-09035f634c7d.jpg)
 
-````
+````c
 const int R = 9 ;
 const int G = 10 ;
 const int B = 11 ;
@@ -118,8 +118,10 @@ void loop()
 ## 2-4 analogRead(), 1024解析度 (i.e.,10-bit): 可變電阻 + 序列監視器與輸出; 當你改變可變電阻的阻值(e.g., 10K-ohm)時，序列監視器輸出的數值有什麼改變? 數值又有什麼意義呢? 
 
 ![螢幕擷取畫面 2021-09-12 101308](https://user-images.githubusercontent.com/89327102/132969182-dc6e62d5-f8c2-4b5a-97d0-4e34babd9fda.jpg)
+![螢幕擷取畫面 2021-09-12 103055](https://user-images.githubusercontent.com/89327102/132969544-e900d31d-0599-4c05-a1b3-cf855b982c22.jpg)
 
-````
+
+````c
 
 
 int sensorValue = 0;
