@@ -1,4 +1,4 @@
-# Lab1: LED Practice
+# Lab1 LED Practice
 
 ## 在TinkerCAD開一個新的Circuit, 加上一個外部的LED, 並且ON (亮) 1秒, OFF(滅) 1秒
 
