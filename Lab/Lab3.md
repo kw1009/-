@@ -1,4 +1,4 @@
-# Lab3: 使用超音波感測器 + LED控制
+# Lab3 使用超音波感測器 + LED控制
 
 ## Lab 3-1: Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output 
 
