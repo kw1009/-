@@ -146,7 +146,6 @@ void loop()
 
 ## 2-5 按下按鍵, Green LED亮 & Red LED滅; 放開按鍵, Green LED滅 & Red LED亮.
 
-![image](https://user-images.githubusercontent.com/89327102/132969440-a37e3d32-22f9-447e-9962-2674451ef8d3.png)
 ![螢幕擷取畫面 2021-09-19 094126](https://user-images.githubusercontent.com/89327102/133912790-27317b7f-d28a-45c1-9f45-d1316ccb50de.jpg)
 
 
