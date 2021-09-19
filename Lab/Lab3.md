@@ -1,9 +1,10 @@
 # 3-1
 
 
-
+## 用法一
 ![螢幕擷取畫面 2021-09-19 101731](https://user-images.githubusercontent.com/89327102/133913287-1bbceb93-6d6b-41f1-b85d-9182ae35fa4a.jpg)
-
+## 用法二
+![螢幕擷取畫面 2021-09-19 102914](https://user-images.githubusercontent.com/89327102/133913438-d50e9c6f-7d78-422b-9d1a-6b8828950498.jpg)
 
 ````c
 int inches = 0;
