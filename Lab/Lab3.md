@@ -48,9 +48,61 @@ void loop()
 
 ## Lab 3-2: 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output
 
+![螢幕擷取畫面 2021-09-26 100801](https://user-images.githubusercontent.com/89327102/134790768-ab79f95f-8ab7-47db-9457-70e270d6b439.jpg)
 
+````c
+int cm = 0;
 
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
+}
 
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(8, OUTPUT); // G
+  pinMode(10, OUTPUT);// B
+  pinMode(12, OUTPUT);// R
+}
+
+void loop()
+{
+  cm = 0.01723 * readUltrasonicDistance(7, 7);
+  Serial.print(cm);
+  Serial.println("cm");
+  delay(100);
+  
+  if(cm < 70)
+  {
+   analogWrite(9,0);
+   analogWrite(10,0);
+   analogWrite(12,255);
+  }
+  else if(cm > 270)
+  {
+   analogWrite(9,0);
+   analogWrite(10,255);
+   analogWrite(12,0);
+  }
+  else
+ 
+ {
+   analogWrite(8,255);
+   analogWrite(10,0);
+   analogWrite(12,0);
+  }
+ ````
+}
 
 
 
