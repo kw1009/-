@@ -53,6 +53,13 @@ void loop()
 ````c
 int cm = 0;
 
+void LED(int RH, int BH, int GH)
+{
+  analogWrite(12, RH);
+  analogWrite(10, BH);
+  analogWrite(9, GH);
+}
+
 long readUltrasonicDistance(int triggerPin, int echoPin)
 {
   pinMode(triggerPin, OUTPUT);  // Clear the trigger
@@ -70,7 +77,7 @@ long readUltrasonicDistance(int triggerPin, int echoPin)
 void setup()
 {
   Serial.begin(9600);
-  pinMode(8, OUTPUT); // G
+  pinMode(9, OUTPUT); // G
   pinMode(10, OUTPUT);// B
   pinMode(12, OUTPUT);// R
 }
@@ -82,25 +89,14 @@ void loop()
   Serial.println("cm");
   delay(100);
   
-  if(cm < 70)
-  {
-   analogWrite(9,0);
-   analogWrite(10,0);
-   analogWrite(12,255);
-  }
+ if(cm < 70)
+	LED(255,0,0);
   else if(cm > 270)
-  {
-   analogWrite(9,0);
-   analogWrite(10,255);
-   analogWrite(12,0);
-  }
-  else
+  	LED(0,255,0);
+  else 
+  	LED(0,0,255);
  
- {
-   analogWrite(8,255);
-   analogWrite(10,0);
-   analogWrite(12,0);
-  }
+}
  ````
 }
 
