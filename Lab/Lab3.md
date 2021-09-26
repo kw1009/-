@@ -7,6 +7,8 @@
 ### 用法二
 ![螢幕擷取畫面 2021-09-19 102914](https://user-images.githubusercontent.com/89327102/133913438-d50e9c6f-7d78-422b-9d1a-6b8828950498.jpg)
 
+### 程式
+
 ````c
 int inches = 0;
 
@@ -49,6 +51,8 @@ void loop()
 ## Lab 3-2: 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output
 
 ![螢幕擷取畫面 2021-09-26 100801](https://user-images.githubusercontent.com/89327102/134790768-ab79f95f-8ab7-47db-9457-70e270d6b439.jpg)
+
+### 程式
 
 ````c
 int cm = 0;
@@ -104,6 +108,7 @@ void loop()
 
 ![螢幕擷取畫面 2021-09-26 102953](https://user-images.githubusercontent.com/89327102/134791231-9d9c9865-a8f3-496c-a135-c442b8ab0628.jpg)
 
+### 程式
 
 ````c
 int result, result2, result3;
@@ -139,9 +144,7 @@ void loop()
       d3 = String(String(i+2) + "X" + String(j) + "=" + String(result3));
       
       Serial.println(d1 + ", " + d2 + ", " + d3);
-
-
-       
+      
       aa+=1;
       
       delay(100);
