@@ -106,4 +106,57 @@ void loop()
 
 ## Lab 3-3: Arudino常用的C語言程式介紹與實作
 
+![螢幕擷取畫面 2021-09-26 102953](https://user-images.githubusercontent.com/89327102/134791231-9d9c9865-a8f3-496c-a135-c442b8ab0628.jpg)
 
+
+````c
+int result, result2, result3;
+String d0 = "****** 9X9 Math ******";
+String d1, d2, d3;
+void setup()
+{
+  pinMode(12, OUTPUT);   // R
+  pinMode(9, OUTPUT);    // G
+  
+  Serial.begin(9600);
+
+}
+
+void loop()
+{
+  int aa = 0;
+
+  Serial.println(d0); 
+  
+  digitalWrite(12, HIGH);
+  analogWrite(9, aa); 
+  
+  for (int i=1;i<=9; i=i+3){
+    for (int j=1;j<=9; j++){
+      
+      result = i*j;
+      result2 = (i+1)*j;
+      result3 = (i+2)*j;
+      
+      d1 = String(String(i) + "X" + String(j) + "=" + String(result));
+      d2 = String(String(i+1) + "X" + String(j) + "=" + String(result2));
+      d3 = String(String(i+2) + "X" + String(j) + "=" + String(result3));
+      
+      Serial.println(d1 + ", " + d2 + ", " + d3);
+
+
+       
+      aa+=1;
+      
+      delay(100);
+    } // loop j
+    analogWrite(9, aa*3); 
+    Serial.println("");
+  } // loop i
+
+  digitalWrite(12, LOW);
+  analogWrite(9, 255); 
+  delay(500);	
+  analogWrite(9, 0);
+}
+````
