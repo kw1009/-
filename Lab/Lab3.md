@@ -105,13 +105,14 @@ void loop()
 
 ## Lab 3-3: Arudino常用的C語言程式介紹與實作
 
-![螢幕擷取畫面 2021-09-26 102953](https://user-images.githubusercontent.com/89327102/134791231-9d9c9865-a8f3-496c-a135-c442b8ab0628.jpg)
+![image](https://user-images.githubusercontent.com/89327102/134792132-9f4f1b94-aaf8-48e9-9476-a431a93047df.png)
+
 
 ### 程式
 
 ````c
 int result, result2, result3;
-String d0 = "****** 9X9 Math ******";
+String d0 = "****** 9X9 Multiplication table ******";
 String d1, d2, d3;
 void setup()
 {
