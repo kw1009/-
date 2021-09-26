@@ -1,6 +1,8 @@
 # Lab1 LED Practice
 
-## 在TinkerCAD開一個新的Circuit, 加上一個外部的LED, 並且ON (亮) 1秒, OFF(滅) 1秒
+## digitalWrite(), LED接線與ON&OFF操作 
+
+## 1-1 在TinkerCAD開一個新的Circuit, 加上一個外部的LED, 並且ON (亮) 1秒, OFF(滅) 1秒
 
 ![螢幕擷取畫面 2021-08-29 100708](https://user-images.githubusercontent.com/89327102/131235843-8b5f62d0-4cf0-4cc6-b454-9489f1bd436a.jpg)
 ## 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, ON (亮) 0.5秒, OFF(滅) 0.5秒
