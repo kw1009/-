@@ -4,6 +4,8 @@
 
 ![image](https://user-images.githubusercontent.com/89327102/132112778-84441431-1758-4613-841f-012d42b53cea.png)
 
+### 程式
+
 ````c
 int brightness = 0;
 
@@ -26,6 +28,8 @@ void setup()
 ## 2-2 RGB LED燈全彩模組, 分別讓LED輪流表現正紅、正綠、正藍，三個顏色，時間間隔1秒鐘。並且觀查LED顏色和波形或是電壓有什麼關連性?
 
 ![螢幕擷取畫面 2021-09-05 223042](https://user-images.githubusercontent.com/89327102/132130600-05502901-eeea-49e2-808c-841dabce77f7.jpg)
+
+### 程式
 
 ````c
 const int R = 9 ;
@@ -62,6 +66,8 @@ void loop()
 ## 2-3, 讓你的RGB LED燈全彩模組也可會"呼吸", LED顏色變化是否有像"呼吸的效果"和示波器的波形有什麼關連性?
 
 ![螢幕擷取畫面 2021-09-12 095531](https://user-images.githubusercontent.com/89327102/132968047-973ca7d8-449f-4aac-ab43-09035f634c7d.jpg)
+
+### 程式
 
 ````c
 const int R = 9 ;
@@ -120,6 +126,7 @@ void loop()
 ![螢幕擷取畫面 2021-09-12 101308](https://user-images.githubusercontent.com/89327102/132969182-dc6e62d5-f8c2-4b5a-97d0-4e34babd9fda.jpg)
 ![螢幕擷取畫面 2021-09-12 103055](https://user-images.githubusercontent.com/89327102/132969544-e900d31d-0599-4c05-a1b3-cf855b982c22.jpg)
 
+### 程式
 
 ````c
 
@@ -149,6 +156,7 @@ void loop()
 ![螢幕擷取畫面 2021-09-19 094126](https://user-images.githubusercontent.com/89327102/133912790-27317b7f-d28a-45c1-9f45-d1316ccb50de.jpg)
 ![螢幕擷取畫面 2021-09-19 095257](https://user-images.githubusercontent.com/89327102/133912941-898f0c5a-9ced-4019-be72-6ded11ecd82c.jpg)
 
+### 程式
 
 ````c
 
