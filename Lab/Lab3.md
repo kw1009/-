@@ -10,7 +10,8 @@
 ##### [Lab 3-3 九九乘法表應用 ](#003)
 
 <a name="001"/>
-## Lab 3-1: Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output 
+
+### Lab 3-1: Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output 
 
 ### 用法一
 ![螢幕擷取畫面 2021-09-19 101731](https://user-images.githubusercontent.com/89327102/133913287-1bbceb93-6d6b-41f1-b85d-9182ae35fa4a.jpg)
@@ -58,7 +59,7 @@ void loop()
 }
 ````
 <a name="002"/>
-## Lab 3-2: 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output
+### Lab 3-2: 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output
 
 ![螢幕擷取畫面 2021-09-26 100801](https://user-images.githubusercontent.com/89327102/134790768-ab79f95f-8ab7-47db-9457-70e270d6b439.jpg)
 
@@ -113,7 +114,7 @@ void loop()
 }
  ````
 <a name="003"/>
-## Lab 3-3: Arudino常用的C語言程式介紹與實作
+### Lab 3-3: Arudino常用的C語言程式介紹與實作
 
 ![image](https://user-images.githubusercontent.com/89327102/134792132-9f4f1b94-aaf8-48e9-9476-a431a93047df.png)
 
