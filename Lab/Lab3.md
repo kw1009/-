@@ -5,9 +5,9 @@
 
 #### 目錄
 
-##### [Lab 3-1 Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output](#001)
-##### [Lab 3-2 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output](#002)
-##### [Lab 3-3 Arudino常用的C語言程式介紹與實作](#003)
+##### [Lab 3-1 超音波感測器 ](#001)
+##### [Lab 3-2 超音波感測器 + LED ](#002)
+##### [Lab 3-3 九九乘法表應用 ](#003)
 
 <a name="001"/>
 ## Lab 3-1: Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output 
