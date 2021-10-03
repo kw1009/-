@@ -1,5 +1,14 @@
 # Lab3 使用超音波感測器 + LED控制, 常用的C語言程式介紹
 
+### 如何使用目錄
+<a name="000"/>
+#### 目錄
+
+##### [Lab 3-1 Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output](#001)
+##### [Lab 3-2 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output](#002)
+##### [Lab 3-3 Arudino常用的C語言程式介紹與實作](#003)
+
+<a name="001"/>
 ## Lab 3-1: Ultrasonic Sensor (3-pin) + 測距 (以公分顯示即可) + RS232 Output 
 
 ### 用法一
@@ -47,7 +56,7 @@ void loop()
   delay(100); // Wait for 100 millisecond(s)
 }
 ````
-
+<a name="002"/>
 ## Lab 3-2: 超音波感測器 + LED (紅色LED:亮<70cm, 緑色LED: 亮<270cm, 藍色LED:亮, 介於70cm ~ 270cm之間) + RS232 Output
 
 ![螢幕擷取畫面 2021-09-26 100801](https://user-images.githubusercontent.com/89327102/134790768-ab79f95f-8ab7-47db-9457-70e270d6b439.jpg)
@@ -102,7 +111,7 @@ void loop()
  
 }
  ````
-
+<a name="003"/>
 ## Lab 3-3: Arudino常用的C語言程式介紹與實作
 
 ![image](https://user-images.githubusercontent.com/89327102/134792132-9f4f1b94-aaf8-48e9-9476-a431a93047df.png)
