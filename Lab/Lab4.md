@@ -111,12 +111,12 @@ void loop() {
 
 ## Lab 4-4 整合超音波感測器 + LCD
 
-![螢幕擷取畫面 2021-10-17 103417](https://user-images.githubusercontent.com/89327102/137608372-cb246a02-cc05-47ca-bcdc-da2d0cd4d87d.jpg)
-
-
 1. **將超音波感測器傳回的距離, 在LCD上面顯示** 
 2. **同時也和之前的實作一樣, 在序列輸出** 
 3. **另外, 當物體的距離小於150cm時, 則亮紅色LED, 否則亮綠色LED**
+
+![螢幕擷取畫面 2021-10-17 103417](https://user-images.githubusercontent.com/89327102/137608397-232ba439-0977-4559-ae82-85cde6ad2497.jpg)
+
 
 ### 程式
 ````c
