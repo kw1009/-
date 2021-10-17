@@ -120,16 +120,15 @@ void loop() {
 
 ### 程式
 ````c
-#include <LiquidCrystal.h> //LCD library
-  
-  #define echo 7
-  #define trig 7
 
 float  duration; // time taken by the pulse to return back
 float  dd; // oneway distance travelled by the pulse
 
 int G = 8;
 int R = 9;
+
+#define echo 7
+#define trig 7
 
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
