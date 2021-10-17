@@ -111,6 +111,69 @@ void loop() {
 
 ## Lab 4-4 整合超音波感測器 + LCD
 
-1. **將超音波感測器傳回的距離, 在LCD上面顯示,** 
-2. **同時也和之前的實作一樣, 在序列輸出.** 
+
+
+1. **將超音波感測器傳回的距離, 在LCD上面顯示** 
+2. **同時也和之前的實作一樣, 在序列輸出** 
 3. **另外, 當物體的距離小於150cm時, 則亮紅色LED, 否則亮綠色LED**
+
+### 程式
+````c
+#include <LiquidCrystal.h> //LCD library
+  
+  #define echo 7
+  #define trig 7
+
+float  duration; // time taken by the pulse to return back
+float  dd; // oneway distance travelled by the pulse
+
+int G = 8;
+int R = 9;
+
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  Serial.begin(9600);
+  digitalWrite(G, OUTPUT);
+  digitalWrite(R, OUTPUT);
+  lcd.begin(16, 2);
+  lcd.print("Distance, cm: ");
+}
+
+void time_Measurement()
+  { 
+    pinMode(trig, OUTPUT);
+    digitalWrite(trig, LOW);
+    delayMicroseconds(2);  
+    digitalWrite(trig, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trig, LOW);
+    pinMode(echo, INPUT);  
+    duration = pulseIn(echo, HIGH);
+  }
+
+void loop() {
+  time_Measurement();
+  dd = duration * 0.01723;
+  
+  Serial.print("Distance, cm: ");
+  Serial.print(dd);
+  Serial.println();
+  
+  if(dd<150)
+  {
+    digitalWrite(G, 0);
+    digitalWrite(R, 1);
+  }
+  else
+  {
+    digitalWrite(G, 1);
+    digitalWrite(R, 0);    
+  }
+  
+  lcd.setCursor(0, 1);
+  lcd.print(dd);
+  
+  delay(200); 
+}
