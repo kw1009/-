@@ -1,8 +1,20 @@
 # Lab1  digitalWrite(), LED接線與ON&OFF操作 
 
+#### 目錄
+<a name="000"/>
+
+##### [1-1燈泡基礎運用](#001)
+##### [1-2鄧砲進階運用](#002)
+##### [1-3燈泡轉換運用](#003)
+
+<a name="001"/>
+
 ## 1-1 在TinkerCAD開一個新的Circuit, 加上一個外部的LED, 並且ON (亮) 1秒, OFF(滅) 1秒
 
 ![螢幕擷取畫面 2021-08-29 100708](https://user-images.githubusercontent.com/89327102/131235843-8b5f62d0-4cf0-4cc6-b454-9489f1bd436a.jpg)
+
+<a name="002"/>
+
 ## 1-2 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, ON (亮) 0.5秒, OFF(滅) 0.5秒
 
 ![螢幕擷取畫面 2021-08-29 103439](https://user-images.githubusercontent.com/89327102/131236340-6aa4a6ea-8a24-49a1-8618-5e65afd68bab.jpg)
@@ -37,6 +49,8 @@ void loop()
   delay(500); 
 }
 ````
+
+<a name="003"/>
 
 ## 1-3 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, 讓LED ON, OFF的順序為R >> G >> B >> G >> R .... 無限循環
 
@@ -74,3 +88,5 @@ void loop()
  
 }
 ````
+
+##### [TOP](#000)
