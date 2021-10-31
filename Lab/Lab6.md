@@ -74,5 +74,47 @@ if (key){
 
 ## Lab 6-2 分享一個你最喜歡的實作 (電路即可)到你的GitHub
 
+用七段顯示器, 顯示 . →1→ ... → 9 → 0 → 全滅
 
 ![螢幕擷取畫面 2021-10-03 103917](https://user-images.githubusercontent.com/89327102/139564196-2621530d-c5b9-4b47-bbe3-18269f944af2.jpg)
+
+### 程式
+````C
+void setup()
+{
+for(int x = 1; x < 9; x++) {
+pinMode(x,OUTPUT);
+}
+}
+
+void seg71(int a, int b, int c, int d, int e, int f, int g, int h)
+{
+digitalWrite(1, a);
+digitalWrite(2, b);
+digitalWrite(3, c);
+digitalWrite(4, d);
+digitalWrite(5, e);
+digitalWrite(6, f);
+digitalWrite(7, g);
+digitalWrite(8, h);
+delay(200);
+}
+
+void loop()
+{
+//    a, b, c, d, e, f, g, h
+seg71(0, 0, 0, 0, 0, 0, 0, 1); // .
+seg71(0, 1, 1, 0, 0, 0, 0, 0); // 1
+seg71(1, 1, 0, 1, 1, 0, 1, 0); // 2
+seg71(1, 1, 1, 1, 0, 0, 1, 0); // 3
+seg71(0, 1, 1, 0, 0, 1, 1, 0); // 4
+seg71(1, 0, 1, 1, 0, 1, 1, 0); // 5
+seg71(1, 0, 1, 1, 1, 1, 1, 0); // 6
+seg71(1, 1, 1, 0, 0, 0, 0, 0); // 7
+seg71(1, 1, 1, 1, 1, 1, 1, 0); // 8
+seg71(1, 1, 1, 1, 0, 1, 1, 0); // 9
+seg71(1, 1, 1, 1, 1, 1, 0, 0); // 0
+ 
+  
+}
+````
