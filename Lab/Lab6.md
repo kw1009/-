@@ -73,3 +73,6 @@ if (key){
 <a name="002"/>
 
 ## Lab 6-2 分享一個你最喜歡的實作 (電路即可)到你的GitHub
+
+
+![螢幕擷取畫面 2021-10-03 103917](https://user-images.githubusercontent.com/89327102/139564196-2621530d-c5b9-4b47-bbe3-18269f944af2.jpg)
