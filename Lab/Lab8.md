@@ -1,4 +1,4 @@
-
+#  Lab 8-1 零基礎Python快速入門與實作                                              
 
 
 ![螢幕擷取畫面 2021-11-21 100902](https://user-images.githubusercontent.com/89327102/142746632-f23e2644-2033-4100-9227-ea3d2eb04971.jpg)
