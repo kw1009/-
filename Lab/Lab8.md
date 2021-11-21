@@ -418,3 +418,6 @@ print('*** Done by %s at ' % ts3,today, type(today))
 ````
 
 ## Lab 8-2 零基礎Python快速入門與實作2/2
+
+
+![螢幕擷取畫面 2021-11-21 104014](https://user-images.githubusercontent.com/89327102/142747530-fea6c8c7-6615-46f0-930d-cc30b0861dd3.jpg)
