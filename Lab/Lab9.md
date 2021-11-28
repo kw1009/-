@@ -130,7 +130,7 @@ with open(downloaded_file) as f:
 """## 3. 選擇圖像: 您可以選擇以下圖像之一，或使用您自己的圖像。 請記住，模型的輸入大小各不相同，其中一些使用動態輸入大小（啟用對未縮放圖像的推斷）。 鑑於此，方法 load_image 已經將圖像重新縮放為預期格式。
 
 選項: ['老虎'，'公共汽車'，'汽車'，'貓'，'狗'，'蘋果'，'烏龜'，'火烈鳥'，'鋼琴'，'蜂窩'，'茶壺']
-param ['tiger', 'bus', 'car', 'cat', 'dog', 'apple', 'turtle', 'flamingo', 'piano', 'honeycomb', 'teapot']
+param ['tiger', 'bus', 'car', 'cat', 'dog', 'apple', 'turtle', 'flamingo', 'piano', 'honeycomb', 'teapot','cy']
 """
 
 
@@ -149,6 +149,7 @@ images_for_test_map = {
     "piano": "https://upload.wikimedia.org/wikipedia/commons/d/da/Steinway_%26_Sons_upright_piano%2C_model_K-132%2C_manufactured_at_Steinway%27s_factory_in_Hamburg%2C_Germany.png",
     "honeycomb": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Honey_comb.jpg",
     "teapot": "https://upload.wikimedia.org/wikipedia/commons/4/44/Black_tea_pot_cropped.jpg",
+    "cy":"https://hinetcdn.waca.ec/uploads/shops/2303/products/18/18e3142acb70acff1c4dc8ce8b635669.jpg"
 }
 
 img_url = images_for_test_map[image_name]
@@ -179,9 +180,88 @@ for i, item in enumerate(top_5):
 
 show_image(image, '')
 
+## 808 實作A:  Python自動翻譯功能Module測試
+!pip install translate # 安裝翻譯模組
+from translate import Translator
+E_2_TW = Translator(to_lang="zh-TW") # 英翻中
+print('完成安裝與載入翻譯模組 at %s.Thanks!' % today)
 
+## Method 1 without loop
+print('*** Method 1 without loop')
+ts1, ts2 = 'computer', 'university'
+translation1 = E_2_TW.translate(ts1)
+print('1',ts1, translation1)
+translation2 = E_2_TW.translate(ts2)
+print('2',ts2, translation2)
+translation3 = E_2_TW.translate(ts3) 
+print('3',ts3, translation3)
 
+## Method 2 with Loop
+print('*** Method 2 with Loop')
+explist = [ts1, ts2, ts3]
+for i, ts in enumerate(explist):
+  result = E_2_TW.translate(ts)
+  print(i, ts, result)
 
+print('*** Done by %s at ' % ts3,today, type(today))
+
+# 809 實作B: 在圖像上運行模型
+# 
+%time 
+
+probabilities = tf.nn.softmax(classifier(image)).numpy()
+
+top_5 = tf.argsort(probabilities, axis=-1, direction="DESCENDING")[0][:5].numpy()
+np_classes = np.array(classes)
+includes_background_class = probabilities.shape[1] == 1001
+
+for i, item in enumerate(top_5):
+  class_index = item if not includes_background_class else item - 1
+  line = f'({i+1}) {class_index:4} - {classes[class_index]}: {probabilities[0][top_5][i]}'
+  translation1 = E_2_TW.translate(classes[class_index])
+  print(line, ', ', translation1)
+
+show_image(image, '')
+
+"""實作C: 從已提供的選項中,找一張自己喜歡的照片來試試看"""
+image_name = 'teapot' 
+
+# %time 
+
+probabilities = tf.nn.softmax(classifier(image)).numpy()
+
+top_5 = tf.argsort(probabilities, axis=-1, direction="DESCENDING")[0][:5].numpy()
+np_classes = np.array(classes)
+includes_background_class = probabilities.shape[1] == 1001
+
+for i, item in enumerate(top_5):
+  class_index = item if not includes_background_class else item - 1
+  line = f'({i+1}) {class_index:4} - {classes[class_index]}: {probabilities[0][top_5][i]}'
+  translation1 = E_2_TW.translate(classes[class_index])
+  print(line, ', ', translation1)
+
+show_image(image, '')
+
+"""實作D (Optional): 從網路上找一張自己喜歡的照片來試試看 (jpg/png)"""
+image_name = 'cy' 
+# %time 
+
+probabilities = tf.nn.softmax(classifier(image)).numpy()
+
+top_5 = tf.argsort(probabilities, axis=-1, direction="DESCENDING")[0][:5].numpy()
+np_classes = np.array(classes)
+includes_background_class = probabilities.shape[1] == 1001
+
+for i, item in enumerate(top_5):
+  class_index = item if not includes_background_class else item - 1
+  line = f'({i+1}) {class_index:4} - {classes[class_index]}: {probabilities[0][top_5][i]}'
+  translation1 = E_2_TW.translate(classes[class_index])
+  print(line, ', ', translation1)
+
+show_image(image, '')
+````
+
+## Lab 9-2 Python的5個回顧練習
 
 
 
