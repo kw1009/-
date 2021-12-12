@@ -1,6 +1,12 @@
-# AI起手式之圖像分類實作
+# Lab9 AI起手式之圖像分類實作
 
 #### 目錄
+<a name="000"/>
+
+##### [9-1 圖像分類](#001)
+##### [9-2 Python的5個回顧](#002)
+
+<a name="001"/>
 
 ## Lab 9-1 AI應用起手式: 使用 TensorFlow Hub 進行圖像分類
 
@@ -260,6 +266,7 @@ for i, item in enumerate(top_5):
 
 show_image(image, '')
 ````
+<a name="002"/>
 
 ## Lab 9-2 Python的5個回顧練習
 
