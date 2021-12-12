@@ -1,4 +1,12 @@
-#  零基礎Python快速入門與實作                                              
+#  零基礎Python快速入門與實作
+
+#### 目錄
+<a name="000"/>
+
+##### [8-1 入門Python1/2](#001)
+##### [8-2 入門Python2/2](#002)
+
+<a name="001"/>
 
 ## Lab 8-1 零基礎Python快速入門與實作1/2
 
@@ -417,11 +425,12 @@ today = datetime.now()
 print('*** Done by %s at ' % ts3,today, type(today))
 ````
 
+<a name="002"/>
+
 ## Lab 8-2 零基礎Python快速入門與實作2/2
 
 
 ![螢幕擷取畫面 2021-11-21 104014](https://user-images.githubusercontent.com/89327102/142747530-fea6c8c7-6615-46f0-930d-cc30b0861dd3.jpg)
-
 
 
 ````C
@@ -822,32 +831,4 @@ show_image(image, 'Scaled image')
 
 `````
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##### [TOP](#000)
