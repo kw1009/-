@@ -1,4 +1,4 @@
-# AI-based ES? AI? ML? DL? 要如何入門 (How To Learn)? 
+# Lab7 AI-based ES? AI? ML? DL? 要如何入門 (How To Learn)? 
 
 #### 目錄
 <a name="000"/>
